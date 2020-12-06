@@ -20,9 +20,9 @@ $(document).ready(function(){
         $('html').animate({scrollTop:0});
     });
 
-    $('.menu-btn i').click(function(){
+    $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+        $('.menu-btn').toggleClass("active");
     });
     
      $('.scroll-up-btn').click(function(){
