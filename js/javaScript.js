@@ -24,6 +24,15 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+    
+     $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+        $('html').css("scrollBehavior", "auto");
+    });
+
+    $('.navbar .menu li a').click(function(){
+        $('html').css("scrollBehavior", "smooth");
+    });
 
     var typed=new Typed(".typing",{
         strings:["Web Developer", "Designer", "Freelancer", "Student"],
